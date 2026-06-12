@@ -51,6 +51,11 @@ android {
         disable += "LongLogTag"
         disable += "NewApi"
     }
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
+        }
+    }
 }
 
 dependencies {
